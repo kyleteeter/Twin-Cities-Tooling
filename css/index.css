@@ -401,6 +401,9 @@ nav ul li a {
   align-items: center;
   flex-direction: row;
 }
+.tabs .topics a {
+  text-decoration: none;
+}
 .tabs .topics .tab {
   display: flex;
   justify-content: none;
