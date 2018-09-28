@@ -404,7 +404,7 @@ nav ul li a {
 .tabs .topics a {
   text-decoration: none;
 }
-.tabs .topics .tab {
+.tabs .topics a .tab {
   display: flex;
   justify-content: none;
   align-items: center;
@@ -419,11 +419,11 @@ nav ul li a {
   cursor: pointer;
   font-weight: bold;
 }
-.tabs .topics .tab:hover {
+.tabs .topics a .tab:hover {
   background-color: red;
   color: #fff;
 }
-.tabs .topics .active-tab {
+.tabs .topics a .active-tab {
   background-color: red;
   color: #fff;
 }
