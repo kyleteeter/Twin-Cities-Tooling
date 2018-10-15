@@ -1,13 +1,25 @@
 footer {
     background-color: whitesmoke;
+    padding-top: 20px;
     margin: 0;
     display: flex;
     justify-content: space-around;
     border-top: 3px solid lightgray;
-    margin-top: -200px;
+    margin-top: 20px;
+    @media @tablet {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .left_side_footer{
         width: 35%; 
         margin-top: 30px;
+        @media @tablet {
+            width: 60%
+        }
+        @media @phone {
+            width: 80%;
+        }
         p{
             font-size: 1.6rem;
             color: slategray;
@@ -28,12 +40,26 @@ footer {
             color: @color-primary;
             font-family: sans-serif;
             margin: 20px 0;
-            h1{
-                font-size: 1.6rem;
-                padding-left: 15px;
-                color: slategray;
-                font-weight: 500;
+            a{
+                display: flex;
+                text-decoration: none;
+                i{
+                    color: @color-primary;
+                }
+                i:hover {
+                    color: slategray;
+                }
+                h1{
+                    font-size: 1.6rem;
+                    padding-left: 15px;
+                    color: slategray;
+                    font-weight: 500;
+                }
+                h1:hover {
+                    color: @color-primary;
+                }
             }
+            
             }
         
     }

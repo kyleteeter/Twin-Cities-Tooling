@@ -1,13 +1,32 @@
 .about {
     display: flex;
     justify-content: space-around;
-    margin: 100px;
+    margin: 50px;
+    margin-top: 100px;
     font-family: sans-serif;
+    @media @tablet {
+        flex-direction: column;
+        padding-top: 385px;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
     img{
-        width: 50%;
+        width: 400px;
         height: 400px;
         border-radius: 20px;
-
+        @media @tablet {
+            width: 80%;
+            height: 425px;
+        }
+        @media @tabletsm {
+            height: 325px;
+        }
+        @media @phone {
+            height: 250px;
+        }
     }
 }
 
@@ -32,7 +51,7 @@
     }
     .sub-text{
         display: flex;
-        color:rgb(61, 69, 77);
+        color:rgb(13, 40, 66);
         div{
             .checktext{
                 .flex();

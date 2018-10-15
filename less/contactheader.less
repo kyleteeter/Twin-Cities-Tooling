@@ -3,15 +3,38 @@
     justify-content: flex-end;
     align-items: center;
     background-color: @color-secondary;
+    @media @tablet {
+        justify-content: space-evenly;
+    }
+    @media @phone{
+        justify-content: space-between;
+    }
     div {
         padding: 10px;
         margin-right: 70px;
         display: flex;
+        @media @tablet {
+            margin-right: 0;
+            padding: none;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+        }
+        i:hover{
+            color: white;
+        }
         h1{
             font-size: 1.5rem;
             font-weight: 500;
             font-family: sans-serif;
             color: @color-white;
+            @media @tablet {
+                display: none;
+            }
+        }
+        h1:hover{
+            color: @color-primary;
         }
         
     }
@@ -37,16 +60,30 @@ nav{
     position: sticky;
     top: 0;
     z-index: 10;
+    @media @tablet {
+        flex-direction: column;
+    }
     .logo {
         background-color: @color-primary;
-        background-image: -webkit-linear-gradient(30deg, @color-primary 50%, @color-white 50%);
+        background-image: -webkit-linear-gradient(30deg, @color-primary 70%, @color-white 30%);
         width: 70%;
+        @media @tablet {
+            background-color: @color-primary;
+            background-image: none;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
         background-color: @color-white;
+        @media @tablet {
+            height: 50px;
+        }
         li{
             
             a{
@@ -57,7 +94,20 @@ nav{
                 color: @color-black;
                 margin-left: 30px;
                 margin-right: 60px;
-                
+                padding: 15px;
+                border-radius: 8px;
+                @media @tablet {
+                    padding: 10px;
+                    margin:0;
+                }
+                @media @phone {
+                    
+
+                }
+            }
+            a:hover {
+                color: white;
+                background-color: @color-secondary;
             }
         }
     }
@@ -113,6 +163,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .box-row {
     position: absolute;
@@ -120,6 +171,12 @@ nav{
     justify-content: center;
     align-items: center;
     bottom: -60px;
+    @media @tablet{
+        flex-direction: column;
+        bottom: -370px;
+        width: 100%;
+        
+    }
     
     .box1 {
         display: inline-block;
@@ -131,6 +188,14 @@ nav{
         color: @color-white;
         z-index: 2;
         margin: 3px;
+        @media @tablet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            flex-direction: column;
+            border-radius: 5px;
+        }
         h3{
             font-family: sans-serif;
             font-size: 2.4rem;
@@ -154,6 +219,14 @@ nav{
         color: @color-secondary;
         z-index: 2;
         margin: 3px;
+        @media @tablet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            flex-direction: column;
+            border-radius: 5px;
+        }
         h3{
             font-family: sans-serif;
             font-size: 2.4rem;
@@ -178,6 +251,14 @@ nav{
         color: @color-secondary;
         z-index: 2;
         margin: 3px;
+        @media @tablet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            flex-direction: column;
+            border-radius: 5px;
+        }
         h3{
             font-family: sans-serif;
             font-size: 2.4rem;
