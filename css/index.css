@@ -647,6 +647,11 @@ body {
   -o-transform: translatey(-50%);
   transform: translatey(-50%);
 }
+@media (max-width:750px) {
+  .testim {
+    height: 500px;
+  }
+}
 .testim .wrap {
   position: relative;
   width: 100%;
