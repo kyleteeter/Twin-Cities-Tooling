@@ -20,22 +20,23 @@
         a{
             display: flex;
             text-decoration: none;
+            h1{
+                font-size: 1.5rem;
+                font-weight: 500;
+                font-family: sans-serif;
+                color: @color-white;
+                @media @tablet {
+                    display: none;
+                }
+            }
+            h1:hover{
+                color: @color-primary;
+            }
         }
         i:hover{
             color: white;
         }
-        h1{
-            font-size: 1.5rem;
-            font-weight: 500;
-            font-family: sans-serif;
-            color: @color-white;
-            @media @tablet {
-                display: none;
-            }
-        }
-        h1:hover{
-            color: @color-primary;
-        }
+        
         
     }
     .call {

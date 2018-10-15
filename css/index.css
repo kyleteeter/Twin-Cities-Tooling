@@ -168,22 +168,22 @@ html {
   display: flex;
   text-decoration: none;
 }
-.contact-header div i:hover {
-  color: white;
-}
-.contact-header div h1 {
+.contact-header div a h1 {
   font-size: 1.5rem;
   font-weight: 500;
   font-family: sans-serif;
   color: #fff;
 }
 @media (max-width:960px) {
-  .contact-header div h1 {
+  .contact-header div a h1 {
     display: none;
   }
 }
-.contact-header div h1:hover {
+.contact-header div a h1:hover {
   color: #243559;
+}
+.contact-header div i:hover {
+  color: white;
 }
 .contact-header .call {
   border: 2px solid #fff;
